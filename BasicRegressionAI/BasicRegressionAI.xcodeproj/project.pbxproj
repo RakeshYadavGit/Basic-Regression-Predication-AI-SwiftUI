@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C634E89CA668F7791FC777 /* Pods_BasicRegressionAI_BasicRegressionAIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6169FEEA045DDDA186DF8FE /* Pods_BasicRegressionAI_BasicRegressionAIUITests.framework */; };
+		14F1F335C00791C20A8F0A1E /* Pods_BasicRegressionAITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17701E559EDF04CFF2862220 /* Pods_BasicRegressionAITests.framework */; };
+		623BFF98272C3431D683AF17 /* Pods_BasicRegressionAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D98B321DA23EF6457CC06C /* Pods_BasicRegressionAI.framework */; };
+		F9F08D732E3E2828002DCC6B /* BasicRegressionAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F08D702E3E2828002DCC6B /* BasicRegressionAIApp.swift */; };
+		F9F08D742E3E2828002DCC6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F08D712E3E2828002DCC6B /* ContentView.swift */; };
+		F9F08D752E3E2828002DCC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F08D6E2E3E2828002DCC6B /* Assets.xcassets */; };
+		F9F08D792E3E2870002DCC6B /* linear.tflite in Resources */ = {isa = PBXBuildFile; fileRef = F9F08D782E3E2870002DCC6B /* linear.tflite */; };
+		F9F08D882E3E3038002DCC6B /* BasicRegressionAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F08D862E3E3038002DCC6B /* BasicRegressionAITests.swift */; };
+		F9F08D8C2E3E303C002DCC6B /* BasicRegressionAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F08D892E3E303C002DCC6B /* BasicRegressionAIUITests.swift */; };
+		F9F08D8D2E3E303C002DCC6B /* BasicRegressionAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F08D8A2E3E303C002DCC6B /* BasicRegressionAIUITestsLaunchTests.swift */; };
+		F9F08D922E3E30EA002DCC6B /* PredictionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F08D912E3E30EA002DCC6B /* PredictionView.swift */; };
+		F9F08D942E3E3101002DCC6B /* PredictionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F08D932E3E3101002DCC6B /* PredictionViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9F08D502E3E2063002DCC6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9F08D392E3E2062002DCC6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9F08D402E3E2062002DCC6B;
+			remoteInfo = BasicRegressionAI;
+		};
+		F9F08D5A2E3E2063002DCC6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9F08D392E3E2062002DCC6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9F08D402E3E2062002DCC6B;
+			remoteInfo = BasicRegressionAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17701E559EDF04CFF2862220 /* Pods_BasicRegressionAITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicRegressionAITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E5F5DA8D6A6755516C4313 /* Pods-BasicRegressionAITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRegressionAITests.debug.xcconfig"; path = "Target Support Files/Pods-BasicRegressionAITests/Pods-BasicRegressionAITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77B9D1271D9D985AA2BA581B /* Pods-BasicRegressionAI-BasicRegressionAIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRegressionAI-BasicRegressionAIUITests.debug.xcconfig"; path = "Target Support Files/Pods-BasicRegressionAI-BasicRegressionAIUITests/Pods-BasicRegressionAI-BasicRegressionAIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8800E7AEDE3C566D02755A8E /* Pods-BasicRegressionAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRegressionAI.release.xcconfig"; path = "Target Support Files/Pods-BasicRegressionAI/Pods-BasicRegressionAI.release.xcconfig"; sourceTree = "<group>"; };
+		94D98B321DA23EF6457CC06C /* Pods_BasicRegressionAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicRegressionAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F534BB0E7D48E8BB9C28FE9 /* Pods-BasicRegressionAITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRegressionAITests.release.xcconfig"; path = "Target Support Files/Pods-BasicRegressionAITests/Pods-BasicRegressionAITests.release.xcconfig"; sourceTree = "<group>"; };
+		B6169FEEA045DDDA186DF8FE /* Pods_BasicRegressionAI_BasicRegressionAIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicRegressionAI_BasicRegressionAIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C440DA58B6849E5365B1B2B5 /* Pods-BasicRegressionAI-BasicRegressionAIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRegressionAI-BasicRegressionAIUITests.release.xcconfig"; path = "Target Support Files/Pods-BasicRegressionAI-BasicRegressionAIUITests/Pods-BasicRegressionAI-BasicRegressionAIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EC0B3119E5666A135B13193A /* Pods-BasicRegressionAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRegressionAI.debug.xcconfig"; path = "Target Support Files/Pods-BasicRegressionAI/Pods-BasicRegressionAI.debug.xcconfig"; sourceTree = "<group>"; };
+		F9F08D412E3E2062002DCC6B /* BasicRegressionAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicRegressionAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F08D4F2E3E2063002DCC6B /* BasicRegressionAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicRegressionAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F08D592E3E2063002DCC6B /* BasicRegressionAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicRegressionAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F08D6E2E3E2828002DCC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9F08D6F2E3E2828002DCC6B /* BasicRegressionAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicRegressionAI.entitlements; sourceTree = "<group>"; };
+		F9F08D702E3E2828002DCC6B /* BasicRegressionAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRegressionAIApp.swift; sourceTree = "<group>"; };
+		F9F08D712E3E2828002DCC6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9F08D782E3E2870002DCC6B /* linear.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = linear.tflite; sourceTree = "<group>"; };
+		F9F08D862E3E3038002DCC6B /* BasicRegressionAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRegressionAITests.swift; sourceTree = "<group>"; };
+		F9F08D892E3E303C002DCC6B /* BasicRegressionAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRegressionAIUITests.swift; sourceTree = "<group>"; };
+		F9F08D8A2E3E303C002DCC6B /* BasicRegressionAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRegressionAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9F08D912E3E30EA002DCC6B /* PredictionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionView.swift; sourceTree = "<group>"; };
+		F9F08D932E3E3101002DCC6B /* PredictionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9F08D3E2E3E2062002DCC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623BFF98272C3431D683AF17 /* Pods_BasicRegressionAI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F08D4C2E3E2063002DCC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F1F335C00791C20A8F0A1E /* Pods_BasicRegressionAITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F08D562E3E2063002DCC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C634E89CA668F7791FC777 /* Pods_BasicRegressionAI_BasicRegressionAIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A61E4C0EF83B8F4F2C20E80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94D98B321DA23EF6457CC06C /* Pods_BasicRegressionAI.framework */,
+				B6169FEEA045DDDA186DF8FE /* Pods_BasicRegressionAI_BasicRegressionAIUITests.framework */,
+				17701E559EDF04CFF2862220 /* Pods_BasicRegressionAITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		747E8C76F6124B65D1E11C1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC0B3119E5666A135B13193A /* Pods-BasicRegressionAI.debug.xcconfig */,
+				8800E7AEDE3C566D02755A8E /* Pods-BasicRegressionAI.release.xcconfig */,
+				77B9D1271D9D985AA2BA581B /* Pods-BasicRegressionAI-BasicRegressionAIUITests.debug.xcconfig */,
+				C440DA58B6849E5365B1B2B5 /* Pods-BasicRegressionAI-BasicRegressionAIUITests.release.xcconfig */,
+				21E5F5DA8D6A6755516C4313 /* Pods-BasicRegressionAITests.debug.xcconfig */,
+				9F534BB0E7D48E8BB9C28FE9 /* Pods-BasicRegressionAITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9F08D382E3E2062002DCC6B = {
+			isa = PBXGroup;
+			children = (
+				F9F08D722E3E2828002DCC6B /* BasicRegressionAI */,
+				F9F08D872E3E3038002DCC6B /* BasicRegressionAITests */,
+				F9F08D8B2E3E303C002DCC6B /* BasicRegressionAIUITests */,
+				F9F08D422E3E2062002DCC6B /* Products */,
+				747E8C76F6124B65D1E11C1E /* Pods */,
+				3A61E4C0EF83B8F4F2C20E80 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9F08D422E3E2062002DCC6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D412E3E2062002DCC6B /* BasicRegressionAI.app */,
+				F9F08D4F2E3E2063002DCC6B /* BasicRegressionAITests.xctest */,
+				F9F08D592E3E2063002DCC6B /* BasicRegressionAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9F08D722E3E2828002DCC6B /* BasicRegressionAI */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D8E2E3E3053002DCC6B /* PredictionView */,
+				F9F08D762E3E2833002DCC6B /* Resources */,
+				F9F08D6E2E3E2828002DCC6B /* Assets.xcassets */,
+				F9F08D6F2E3E2828002DCC6B /* BasicRegressionAI.entitlements */,
+				F9F08D702E3E2828002DCC6B /* BasicRegressionAIApp.swift */,
+				F9F08D712E3E2828002DCC6B /* ContentView.swift */,
+			);
+			path = BasicRegressionAI;
+			sourceTree = "<group>";
+		};
+		F9F08D762E3E2833002DCC6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D772E3E2844002DCC6B /* Model */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9F08D772E3E2844002DCC6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D782E3E2870002DCC6B /* linear.tflite */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9F08D872E3E3038002DCC6B /* BasicRegressionAITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D862E3E3038002DCC6B /* BasicRegressionAITests.swift */,
+			);
+			path = BasicRegressionAITests;
+			sourceTree = "<group>";
+		};
+		F9F08D8B2E3E303C002DCC6B /* BasicRegressionAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D892E3E303C002DCC6B /* BasicRegressionAIUITests.swift */,
+				F9F08D8A2E3E303C002DCC6B /* BasicRegressionAIUITestsLaunchTests.swift */,
+			);
+			path = BasicRegressionAIUITests;
+			sourceTree = "<group>";
+		};
+		F9F08D8E2E3E3053002DCC6B /* PredictionView */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D902E3E306B002DCC6B /* ViewModel */,
+				F9F08D8F2E3E3065002DCC6B /* View */,
+			);
+			path = PredictionView;
+			sourceTree = "<group>";
+		};
+		F9F08D8F2E3E3065002DCC6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D912E3E30EA002DCC6B /* PredictionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9F08D902E3E306B002DCC6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9F08D932E3E3101002DCC6B /* PredictionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9F08D402E3E2062002DCC6B /* BasicRegressionAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F08D632E3E2064002DCC6B /* Build configuration list for PBXNativeTarget "BasicRegressionAI" */;
+			buildPhases = (
+				B6956766ED01C0A558CE1841 /* [CP] Check Pods Manifest.lock */,
+				F9F08D3D2E3E2062002DCC6B /* Sources */,
+				F9F08D3E2E3E2062002DCC6B /* Frameworks */,
+				F9F08D3F2E3E2062002DCC6B /* Resources */,
+				24A0C9D6C32B87618127D860 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicRegressionAI;
+			productName = BasicRegressionAI;
+			productReference = F9F08D412E3E2062002DCC6B /* BasicRegressionAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9F08D4E2E3E2063002DCC6B /* BasicRegressionAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F08D662E3E2064002DCC6B /* Build configuration list for PBXNativeTarget "BasicRegressionAITests" */;
+			buildPhases = (
+				52240AADDE1F2A749F97A396 /* [CP] Check Pods Manifest.lock */,
+				F9F08D4B2E3E2063002DCC6B /* Sources */,
+				F9F08D4C2E3E2063002DCC6B /* Frameworks */,
+				F9F08D4D2E3E2063002DCC6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9F08D512E3E2063002DCC6B /* PBXTargetDependency */,
+			);
+			name = BasicRegressionAITests;
+			productName = BasicRegressionAITests;
+			productReference = F9F08D4F2E3E2063002DCC6B /* BasicRegressionAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9F08D582E3E2063002DCC6B /* BasicRegressionAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F08D692E3E2064002DCC6B /* Build configuration list for PBXNativeTarget "BasicRegressionAIUITests" */;
+			buildPhases = (
+				C0B18E1691B6BA5E2606A5DA /* [CP] Check Pods Manifest.lock */,
+				F9F08D552E3E2063002DCC6B /* Sources */,
+				F9F08D562E3E2063002DCC6B /* Frameworks */,
+				F9F08D572E3E2063002DCC6B /* Resources */,
+				2E356CC19C608281732667DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9F08D5B2E3E2063002DCC6B /* PBXTargetDependency */,
+			);
+			name = BasicRegressionAIUITests;
+			productName = BasicRegressionAIUITests;
+			productReference = F9F08D592E3E2063002DCC6B /* BasicRegressionAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9F08D392E3E2062002DCC6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					F9F08D402E3E2062002DCC6B = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					F9F08D4E2E3E2063002DCC6B = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = F9F08D402E3E2062002DCC6B;
+					};
+					F9F08D582E3E2063002DCC6B = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = F9F08D402E3E2062002DCC6B;
+					};
+				};
+			};
+			buildConfigurationList = F9F08D3C2E3E2062002DCC6B /* Build configuration list for PBXProject "BasicRegressionAI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9F08D382E3E2062002DCC6B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F9F08D422E3E2062002DCC6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9F08D402E3E2062002DCC6B /* BasicRegressionAI */,
+				F9F08D4E2E3E2063002DCC6B /* BasicRegressionAITests */,
+				F9F08D582E3E2063002DCC6B /* BasicRegressionAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9F08D3F2E3E2062002DCC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F08D792E3E2870002DCC6B /* linear.tflite in Resources */,
+				F9F08D752E3E2828002DCC6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F08D4D2E3E2063002DCC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F08D572E3E2063002DCC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24A0C9D6C32B87618127D860 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicRegressionAI/Pods-BasicRegressionAI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicRegressionAI/Pods-BasicRegressionAI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicRegressionAI/Pods-BasicRegressionAI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E356CC19C608281732667DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicRegressionAI-BasicRegressionAIUITests/Pods-BasicRegressionAI-BasicRegressionAIUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicRegressionAI-BasicRegressionAIUITests/Pods-BasicRegressionAI-BasicRegressionAIUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicRegressionAI-BasicRegressionAIUITests/Pods-BasicRegressionAI-BasicRegressionAIUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52240AADDE1F2A749F97A396 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicRegressionAITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6956766ED01C0A558CE1841 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicRegressionAI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0B18E1691B6BA5E2606A5DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicRegressionAI-BasicRegressionAIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9F08D3D2E3E2062002DCC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F08D922E3E30EA002DCC6B /* PredictionView.swift in Sources */,
+				F9F08D942E3E3101002DCC6B /* PredictionViewModel.swift in Sources */,
+				F9F08D732E3E2828002DCC6B /* BasicRegressionAIApp.swift in Sources */,
+				F9F08D742E3E2828002DCC6B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F08D4B2E3E2063002DCC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F08D882E3E3038002DCC6B /* BasicRegressionAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F08D552E3E2063002DCC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F08D8C2E3E303C002DCC6B /* BasicRegressionAIUITests.swift in Sources */,
+				F9F08D8D2E3E303C002DCC6B /* BasicRegressionAIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9F08D512E3E2063002DCC6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9F08D402E3E2062002DCC6B /* BasicRegressionAI */;
+			targetProxy = F9F08D502E3E2063002DCC6B /* PBXContainerItemProxy */;
+		};
+		F9F08D5B2E3E2063002DCC6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9F08D402E3E2062002DCC6B /* BasicRegressionAI */;
+			targetProxy = F9F08D5A2E3E2063002DCC6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F9F08D612E3E2064002DCC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BH7FURX85H;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9F08D622E3E2064002DCC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BH7FURX85H;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F9F08D642E3E2064002DCC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC0B3119E5666A135B13193A /* Pods-BasicRegressionAI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BasicRegressionAI/BasicRegressionAI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH7FURX85H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicRegressionAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		F9F08D652E3E2064002DCC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8800E7AEDE3C566D02755A8E /* Pods-BasicRegressionAI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BasicRegressionAI/BasicRegressionAI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH7FURX85H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicRegressionAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		F9F08D672E3E2064002DCC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E5F5DA8D6A6755516C4313 /* Pods-BasicRegressionAITests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH7FURX85H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicRegressionAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasicRegressionAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BasicRegressionAI";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		F9F08D682E3E2064002DCC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F534BB0E7D48E8BB9C28FE9 /* Pods-BasicRegressionAITests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH7FURX85H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicRegressionAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasicRegressionAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BasicRegressionAI";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		F9F08D6A2E3E2064002DCC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77B9D1271D9D985AA2BA581B /* Pods-BasicRegressionAI-BasicRegressionAIUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH7FURX85H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicRegressionAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = BasicRegressionAI;
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		F9F08D6B2E3E2064002DCC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C440DA58B6849E5365B1B2B5 /* Pods-BasicRegressionAI-BasicRegressionAIUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH7FURX85H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicRegressionAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = BasicRegressionAI;
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9F08D3C2E3E2062002DCC6B /* Build configuration list for PBXProject "BasicRegressionAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F08D612E3E2064002DCC6B /* Debug */,
+				F9F08D622E3E2064002DCC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9F08D632E3E2064002DCC6B /* Build configuration list for PBXNativeTarget "BasicRegressionAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F08D642E3E2064002DCC6B /* Debug */,
+				F9F08D652E3E2064002DCC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9F08D662E3E2064002DCC6B /* Build configuration list for PBXNativeTarget "BasicRegressionAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F08D672E3E2064002DCC6B /* Debug */,
+				F9F08D682E3E2064002DCC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9F08D692E3E2064002DCC6B /* Build configuration list for PBXNativeTarget "BasicRegressionAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F08D6A2E3E2064002DCC6B /* Debug */,
+				F9F08D6B2E3E2064002DCC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9F08D392E3E2062002DCC6B /* Project object */;
+}
